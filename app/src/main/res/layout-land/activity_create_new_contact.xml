@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/viewCreateNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="1"
+        android:background="#f4f4f4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_contact_name"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contactNameInput"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_person_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_contact_name"
+        android:inputType="textPersonName"
+        android:textColor="#099bea"
+        android:textColorHint="#D3D3D3"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_phone_number"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/contactName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_local_phone_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_contact_phone"
+        android:inputType="phone"
+        android:textColor="#099bea"
+        android:textColorHint="#D3D3D3"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/contactNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/new_email"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactNameInput" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_email_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_contact_email"
+        android:inputType="textEmailAddress"
+        android:textColor="#099bea"
+        android:textColorHint="#D3D3D3"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/urCompany"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/new_company"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberInput" />
+
+    <EditText
+        android:id="@+id/urCompanyInput"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="36dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_business_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_company_name"
+        android:inputType="textEmailAddress"
+        android:textColor="#099bea"
+        android:textColorHint="#D3D3D3"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/urCompany" />
+
+    <TextView
+        android:id="@+id/contactPersonImage"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/contact_image"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        android:textAlignment="center"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactPersonImage">
+
+        <RadioButton
+            android:id="@+id/contactIcon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="60dp"
+            android:text="@string/contact_image_icon_1" />
+
+        <RadioButton
+            android:id="@+id/contactIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_image_icon_2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FF37BAC9"
+        android:onClick="saveNewContact"
+        android:text="@string/save_button"
+        android:textColor="#FF37BAC9"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FF37BAC9"
+        android:onClick="cancelNewContact"
+        android:text="@string/cancel_button"
+        android:textColor="#FF37BAC9"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</android.support.constraint.ConstraintLayout>

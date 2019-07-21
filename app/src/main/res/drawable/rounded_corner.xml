@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- How to create a transparent background and add a stroke to a shape is learned
+    from https://stackoverflow.com/questions/16161448/how-to-make-layout-with-rounded-corners
+    and figure out to fit for my code
+    -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent"/>
+    <stroke android:width="1.4dp" android:color="#ffffff"/>
+    <corners
+        android:topLeftRadius="0dp"
+        android:topRightRadius="17dp"
+        android:bottomLeftRadius="17dp"
+        android:bottomRightRadius="0dp" />
+
+</shape>

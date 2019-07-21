@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_page">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_image"/>
+
+    <View
+        android:id="@+id/loginView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.9"
+        android:background="@drawable/gradient_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/userNameInput"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="register"
+        android:text="@string/register_button"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/userNameInput"
+        android:layout_alignTop="@+id/registerButton"
+        android:background="@drawable/rounded_button"
+        android:onClick="login"
+        android:text="@string/login_button"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <EditText
+        android:id="@+id/userNameInput"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
+        android:background="@drawable/rounded_corner"
+        android:drawablePadding="3dp"
+        android:drawableStart="@drawable/ic_portrait_white_24dp"
+        android:ems="10"
+        android:hint="@string/hint_username"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:background="@drawable/rounded_corner"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_lock_white_24dp"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="3dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="139dp"
+        android:layout_height="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_contact_mail_white_24dp" />
+
+</RelativeLayout>

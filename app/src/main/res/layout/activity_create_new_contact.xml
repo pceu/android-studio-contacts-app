@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/viewCreateNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="1"
+        android:background="#f4f4f4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="106dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="saveNewContact"
+        android:text="@string/save_button"
+        android:textColor="#FF37BAC9"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="422dp"
+        android:backgroundTint="#FF37BAC9"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_marginEnd="142dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="cancelNewContact"
+        android:text="@string/cancel_button"
+        android:textColor="#FF37BAC9"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="422dp"
+        android:backgroundTint="#FF37BAC9"/>
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/new_contact_name"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <EditText
+        android:id="@+id/contactNameInput"
+        android:layout_width="382dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_person_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_contact_name"
+        android:textColorHint="#D3D3D3"
+        android:inputType="textPersonName"
+        android:textColor="#099bea"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="84dp" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginTop="172dp"
+        android:text="@string/new_phone_number"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="382dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginTop="209dp"
+        android:ems="10"
+        android:hint="@string/hint_contact_phone"
+        android:textColorHint="#D3D3D3"
+        android:inputType="phone"
+        android:textColor="#099bea"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="275dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_local_phone_grey_24dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginTop="279dp"
+        android:text="@string/new_email"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="382dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_email_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_contact_email"
+        android:inputType="textEmailAddress"
+        android:textColor="#099bea"
+        android:textColorHint="#D3D3D3"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <TextView
+        android:id="@+id/urCompany"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginBottom="240dp"
+        android:text="@string/new_company"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/urCompanyInput"
+        android:layout_width="382dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/square_edit_text"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_business_grey_24dp"
+        android:ems="10"
+        android:hint="@string/hint_company_name"
+        android:inputType="textEmailAddress"
+        android:textColor="#099bea"
+        android:textColorHint="#D3D3D3"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/contactPersonImage"
+        android:layout_marginBottom="83dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/contactIcon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="40dp"
+            android:text="@string/contact_image_icon_1" />
+
+        <RadioButton
+            android:id="@+id/contactIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_image_icon_2" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/contactPersonImage"
+        android:layout_width="353dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/contactName"
+        android:layout_marginBottom="129dp"
+        android:text="@string/contact_image"
+        android:textColor="#FF37BAC9"
+        android:textSize="18sp" />
+
+</RelativeLayout>

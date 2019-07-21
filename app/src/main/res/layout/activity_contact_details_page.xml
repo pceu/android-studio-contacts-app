@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/detailsBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" />
+
+    <View
+        android:id="@+id/contactDetailsBannerView"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#37bac9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/contactImage"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <TextView
+        android:id="@+id/detailsFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-8dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/phoneCallButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/ic_call_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/callTextView"
+        app:layout_constraintEnd_toStartOf="@+id/messageButton"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        android:onClick="CallContact"/>
+
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ic_message_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        android:onClick="MessageContact"/>
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/messageButton"
+        android:layout_marginBottom="203dp"
+        android:background="@drawable/ic_email_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        android:onClick="EmailContact"/>
+
+    <TextView
+        android:id="@+id/callTextView"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/phoneCallButton"
+        android:text="@string/call_text_view"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="267dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/emailButton"
+        android:text="@string/email_text_view"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callTextView" />
+
+    <TextView
+        android:id="@+id/companyTextView"
+        android:layout_width="280dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="131dp"
+        android:text="@string/company_text_view"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="228dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/callTextView"
+        android:layout_marginEnd="22dp"
+        android:layout_toStartOf="@+id/phoneCallButton"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="265dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/companyTextView"
+        android:layout_below="@+id/emailTextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="282dp"
+        android:layout_height="98dp"
+        android:layout_alignStart="@+id/phoneNumber"
+        android:layout_below="@+id/companyTextView"
+        android:layout_marginTop="-131dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_edit_black_24dp"
+        android:onClick="GoToEditContact"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Project 2</string>
+    <string name="contact_person_image">Contact Person Image</string>
+    <string name="login_button">Login</string>
+    <string name="copyright">Copyright 2018</string>
+    <string name="splash_screen_title">Simple Contact App</string>
+    <string name="register_button">Register</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">............</string>
+    <string name="username_text_view">Username</string>
+    <string name="password_text_view">Password</string>
+    <string name="example_name">Chrystal Heft</string>
+    <string name="call_text_view">Phone: </string>
+    <string name="message_text_view">Message</string>
+    <string name="email_text_view">Email</string>
+    <string name="company_text_view">Company</string>
+
+    <!-- text for create_new_contact page -->
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="new_contact_name">Name</string>
+    <string name="new_phone_number">Phone</string>
+    <string name="new_email">Email</string>
+    <string name="hint_contact_name">Andrew Jack</string>
+    <string name="hint_contact_phone">0487123456</string>
+    <string name="hint_contact_email">example@gmail.com</string>
+    <string name="hint_company_name">Your Company name...</string>
+    <string name="new_company">Company</string>
+    <string name="contact_image">Image</string>
+    <string name="contact_image_icon_1">Icon 1</string>
+    <string name="contact_image_icon_2">Icon 2</string>
+
+    <!-- contact details page-->
+    <string name="details_toolbar_title">Contact Details</string>
+
+    <!-- Menu -->
+    <string name="logout">Logout</string>
+</resources>
